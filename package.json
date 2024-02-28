@@ -16,6 +16,10 @@
     },
     "author": "Samuel Clinton",
     "license": "MIT",
+    "repository": {
+        "url": "https://github.com/wcodewiz/gc-form",
+        "type": "project"
+    },
     "peerDependencies": {
         "react": "^18.2.0",
         "react-dom": "^18.2.0"
