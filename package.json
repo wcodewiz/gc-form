@@ -1,0 +1,34 @@
+{
+    "name": "gc-form",
+    "version": "0.1.0",
+    "description": "a  form state manager",
+    "main": "dist/cjs/index.js",
+    "module": "dist/esm/index.js",
+    "files": [
+        "dist"
+    ],
+    "scripts": {
+        "dev": "vite",
+        "pack": "npm run build  && npm pack && npm publish",
+        "build": "rm -rf dist/ && prettier --write src/ && npm run build:esm && npm run build:cjs ",
+        "build:esm": "tsc",
+        "build:cjs": "tsc --module CommonJs --outDir dist/cjs"
+    },
+    "author": "Samuel Clinton",
+    "license": "MIT",
+    "peerDependencies": {
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0"
+    },
+    "devDependencies": {
+        "@types/node": "^20.11.3",
+        "@types/react": "^18.2.48",
+        "@types/react-dom": "^18.2.18",
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0",
+        "typescript": "^5.3.3"
+    },
+    "dependencies": {
+        "vite": "^5.0.12"
+    }
+}
